@@ -36,8 +36,11 @@ rangers = [
   'Mazara'
 ]
 
+
 def position_filter(headers, *data)
+  headers.zip(*data)
 end
+
 
 describe 'Position Filter' do
   it 'lines up players with their positions' do
